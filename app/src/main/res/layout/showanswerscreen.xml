@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_test">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/slideViewAnswer"
+        android:orientation="vertical"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:background="#d0d0d0"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#f1f1f1"
+            android:gravity="center_horizontal|center"
+            android:text="Slide down to close"
+            android:textColor="@android:color/darker_gray" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:background="#d0d0d0"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer:"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_marginBottom="8dp"/>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/answerGiven"
+                        android:id="@+id/optionText"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="asjnckjasnasjncakjsnckasjnc bjhabcjhsab hbscjhabs asjhcbajs asjcbasbc asjhcbasjhcb ashbcjsbac ahbscjhsbac ashcbasjbc"
+                        android:id="@+id/answerText"/>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

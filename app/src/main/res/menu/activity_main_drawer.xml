@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_nav"
+            android:title="@string/nav_home" />
+        <item
+            android:id="@+id/nav_courses"
+
+            android:icon="@drawable/ic_courses_nav"
+            android:title="@string/nav_courses" />
+        <item
+            android:id="@+id/nav_notes"
+            android:icon="@drawable/ic_notes_nav"
+            android:title="@string/nav_notes" />
+        <item
+            android:id="@+id/nav_bookmarks"
+            android:icon="@drawable/ic_bookmark_nav"
+            android:title="@string/nav_bookmarks" />
+
+        <item
+            android:id="@+id/nav_dictionary"
+            android:icon="@drawable/ic_dictionary_nav"
+            android:title="@string/nav_dictionary"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/nav_tests"
+            android:icon="@drawable/ic_tests_nav"
+            android:title="@string/nav_tests" />
+        <item
+            android:id="@+id/nav_practice_test"
+            android:icon="@drawable/ic_tests_nav"
+            android:title="@string/nav_practice_test" />
+
+        <item
+            android:id="@+id/nav_legal_maxim"
+            android:visible="false"
+            android:icon="@drawable/ic_legal_maxim"
+            android:title="@string/nav_legal_maxim" />
+        <item
+            android:id="@+id/nav_landmark_judgement"
+            android:icon="@drawable/ic_auction_nav"
+            android:visible="false"
+            android:title="@string/nav_landmark_judgement" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile_nav"
+            android:title="@string/nav_profile" />
+
+        <item
+            android:id="@+id/nav_subscription"
+            android:visible="false"
+            android:icon="@drawable/ic_profile_nav"
+            android:title="@string/nav_subscription" />
+    </group>
+
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/nav_app_share"
+                android:icon="@drawable/ic_share"
+                android:title="@string/nav_app_share" />
+            <item
+                android:id="@+id/nav_about_us"
+                android:icon="@drawable/ic_aboutus_nav"
+                android:title="@string/nav_about_us" />
+            <item
+                android:id="@+id/nav_privacy_policy"
+                android:icon="@drawable/ic_privacy_nav"
+                android:title="@string/privacy_policy" />
+            <item
+                android:id="@+id/nav_features_list"
+                android:visible="false"
+                android:icon="@drawable/ic_features"
+                android:title="@string/features_list" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

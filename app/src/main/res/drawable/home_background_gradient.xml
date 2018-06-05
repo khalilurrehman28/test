@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:angle="90"
+                android:centerColor="#36aeaaaa"
+                android:endColor="@android:color/transparent"
+
+                android:startColor="#47716c6c" />
+            <!--shadow Color-->
+        </shape>
+    </item>
+
+    <item
+        android:bottom="5dp"
+        android:left="1dp"
+        android:right="4dp"
+        android:top="2dp">
+        <shape android:shape="oval">
+            <solid android:color="@color/colorWhite"/>//Background Color
+        </shape>
+    </item>
+</layer-list>

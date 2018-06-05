@@ -1,0 +1,85 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.application.onlineTestSeries">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".Realm.RealmApp"
+        android:allowBackup="false"
+        android:icon="@mipmap/dupleit_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        tools:replace="supportsRtl">
+        <activity
+            android:name=".Home.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SplashScreen.splashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutUs.AboutUsActivity"
+            android:label="@string/activity_title_about_us" />
+        <activity
+            android:name=".PrivacyPolicy.PrivacyPolicyActivity"
+            android:label="@string/activity_title_privacy_policy" />
+        <activity
+            android:name=".login.View.loginActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".register.View.register_activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".forgotPassword.fogotPassswordActivity" />
+        <activity android:name=".Chapters.ChapterActivity" />
+        <activity android:name=".SectionActivity.sectionPreviewActivity" />
+        <activity android:name=".NotesDescription.notesDescription" />
+        <activity
+            android:name=".PracticeTest.Test.TestActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".cityAndState.UI.getStateActivity" />
+        <activity
+            android:name=".landmarkJudgement.landmarkJudgementPreview"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".forgotPassword.forgotPasswordValidate" />
+        <activity android:name=".PracticeTest.TestResult.resultActivity" />
+        <activity android:name=".PYQPTest.Test.TestResult.resultTestActivity" />
+        <activity
+            android:name=".PYQPTest.Test.MainTest"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".profile.profileActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name=".termsAndConditions.termsConditionActivity" />
+        <activity
+            android:name=".FullImageView.FullImage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".PYQP_TEST_ANSWERS.PYQP_previousResult" />
+        <activity
+            android:name=".PYQP_TEST_ANSWERS.Test.PreviousTestActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".menuBareActs.menuBareActs" />
+        <activity android:name=".PracticeTest.practicTestGrabber.practiceTestGrabber" />
+        <activity android:name=".landmarkJudgement.FilterActivity.judgementFilter" />
+        <activity android:name=".Legal_maxim.LeximsPreview" />
+        <activity android:name=".PracticeTest.CreateTest.CreateTest" />
+        <activity
+            android:name=".Subscription_package.subscriptionSubscribe.SubscriptionSubscribe"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".features.Features"></activity>
+        <activity android:name=".PYQPTest.PYQPByState"/>
+        <activity android:name=".BuyTest.Buy_test"
+            android:theme="@style/AppTheme.NoActionBar"/>
+    </application>
+
+</manifest>

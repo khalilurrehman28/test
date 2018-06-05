@@ -1,0 +1,91 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+
+            android:minHeight="45dp"
+            android:orientation="horizontal"
+            android:padding="6dp">
+            <TextView
+                android:id="@+id/tvState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:text="Central Acts"
+                android:textColor="@color/colorBlack"
+                android:textSize="17dp"
+                />
+            <TextView
+                android:id="@+id/btnChangeState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2.5"
+                android:gravity="end"
+                android:paddingRight="8dp"
+                android:text="State Acts"
+                android:textColor="#307edc"
+                android:textSize="16dp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#dfdfdf" />
+    </LinearLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/courseRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp" />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/noSearchResultFound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:paddingTop="15dp"
+        android:text="No search results found"
+        android:layout_marginTop="80dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="18dp"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/noCourseFound"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:text="No Acts available yet"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        android:visibility="gone"
+        />
+</FrameLayout>

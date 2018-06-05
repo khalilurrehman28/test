@@ -1,0 +1,184 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:gravity="center"
+                android:layout_weight="0.4"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Attempted"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10/25"
+                    android:maxLines="1"
+                    android:id="@+id/totalAttemptedTV"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#d0d0d0"
+                android:layout_margin="3dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/checkAnswer"
+                android:textStyle="bold|italic"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:text="Answer?"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+                <TextView
+                    android:id="@+id/finish"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:padding="6dp"
+                    android:text="Exit"
+                    android:minHeight="40dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:background="@drawable/text_border"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#d0d0d0"
+                android:layout_margin="3dp"/>
+
+
+            <ImageView
+                android:id="@+id/control"
+                android:layout_width="35dp"
+                android:layout_height="32dp"
+                android:layout_weight="0.5"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_controls" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="#acacac" />
+
+    </LinearLayout>
+    <com.application.onlineTestSeries.PracticeTest.Test.Adapter.CustomViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_above="@+id/linearLayout"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="#acacac" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f1f1f1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary">
+                <ImageView
+                    android:id="@+id/previous"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:padding="10dp"
+                    android:src="@drawable/left_arrow_white" />
+            </LinearLayout>
+
+
+            <!-- <ImageView
+                 android:id="@+id/view_answer"
+                 android:layout_width="40dp"
+                 android:layout_height="40dp"
+                 android:layout_weight="1"
+                 android:src="@drawable/viewanswer" />
+             <ImageView
+                 android:id="@+id/finish"
+                 android:layout_width="40dp"
+                 android:layout_height="40dp"
+                 android:layout_weight="1"
+                 android:src="@drawable/submiticon" />-->
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:gravity="center"
+                android:id="@+id/currentQuestionNumberTV"
+                android:text="1/2"
+                android:textStyle="bold"
+                android:textColor="@color/colorGrey"
+                android:textSize="20dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@color/colorPrimary">
+                <ImageView
+                    android:id="@+id/next"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:padding="10dp"
+                    android:src="@drawable/right_arrow_white" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/dim"
+        android:alpha="0"
+        android:fitsSystemWindows="true"
+        android:background="#303030"/>
+    <include layout="@layout/testmainuicontent"/>
+    <include layout="@layout/showanswerscreen"/>
+</RelativeLayout>

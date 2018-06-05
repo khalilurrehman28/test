@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:id="@+id/layoutprofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/relativelayout"
+                android:layout_width="match_parent"
+                android:layout_height="240dp">
+
+                <ImageView
+                    android:id="@+id/userImageBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.5"
+                    android:background="#dfdfdf"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:id="@+id/l1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:padding="8dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/userImage"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/ic_account_circle_black_36dp"
+                        app:civ_border_color="@color/colorWhite"
+                        app:civ_border_width="3dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/l1"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:shadowColor="#4b4b4b"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="25"
+                    android:text="Mandeep Singh"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="24dp"/>
+
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/studentName"
+                    android:background="@drawable/transparent_gradients"
+                    android:foregroundGravity="bottom"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/btnFilter"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="6dp"
+                        android:paddingTop="6dp">
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="24dp"
+                            android:layout_marginRight="6dp"
+                            android:src="@drawable/ic_calendar1"/>
+                        <TextView
+                            android:id="@+id/userDOB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12/101995"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="16dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linearGender"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="0.8"
+                        android:gravity="center"
+                        android:paddingBottom="6dp"
+                        android:paddingTop="6dp">
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="24dp"
+                            android:layout_marginRight="6dp"
+                            android:src="@drawable/ic_gender"/>
+                        <TextView
+                            android:id="@+id/userGender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Female"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="16dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <include layout="@layout/item_single_profile"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

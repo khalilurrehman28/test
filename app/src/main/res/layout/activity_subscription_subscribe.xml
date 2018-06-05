@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+    <LinearLayout
+        android:id="@+id/mainSubscriptioncontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:id="@+id/closeSub"
+                android:layout_gravity="end"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_close"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_margin="8dp"
+        android:elevation="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        card_view:cardElevation="8dp"
+        card_view:cardCornerRadius="6dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:background="@color/colorPrimaryDark">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Subscription"
+                    android:gravity="center"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:fontFamily="monospace" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@color/colorPrimary">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/Rs"
+                        android:paddingTop="3dp"
+                        android:textSize="24sp"
+                        android:textColor="@color/white"
+                        android:fontFamily="monospace" />
+                    <TextView
+                        android:id="@+id/packageAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="6000"
+
+                        android:textStyle="bold"
+                        android:textSize="30sp"
+                        android:textColor="@color/white"
+                        android:fontFamily="monospace" />
+                    <TextView
+                        android:id="@+id/paidAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="1800"
+                        android:textStyle="bold"
+                        android:textSize="22sp"
+                        android:layout_marginLeft="8dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="monospace" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/subscriptionDiscount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="40% off"
+                        android:gravity="center"
+
+                        android:textSize="22sp"
+                        android:textColor="@color/white"
+                        android:fontFamily="monospace"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/packageName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Life time subscription"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:layout_margin="22dp"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="monospace"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="30dp">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Buy now"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+
+        android:textSize="20dp"
+        android:id="@+id/pay_now_button"
+        android:fontFamily="monospace"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"/>
+</LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:visibility="visible"/>
+
+</LinearLayout>

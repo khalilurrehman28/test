@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="1dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/card_margin"
+        android:clickable="true"
+        android:elevation="8dp"
+        android:focusable="true"
+        card_view:cardCornerRadius="6dp">
+
+        <RelativeLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/llBackgroundCourse"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/backround_radius">
+
+                    <TextView
+                        android:id="@+id/subscriptionPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|start"
+                        android:maxLines="2"
+                        android:layout_weight="1"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:text="Price"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14sp" />
+                    <TextView
+                        android:id="@+id/subscriptionDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|end"
+                        android:maxLines="2"
+                        android:textAlignment="textEnd"
+                        android:layout_weight="1"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:text="Date"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llBackgroundSubscriptionRadius"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/backround_radius">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/UserProfileImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/course_icon" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/llBackgroundCourse"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/subscriptionName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:text="Course Name"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/subscriptionStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:background="@color/answerGiven"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:text="Active"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    android:textStyle="" />
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

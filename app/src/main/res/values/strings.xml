@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Duple IT Solutions</string>
+    <!--<string name="app_name">Online Test Series</string>-->
+
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">Home</string>
+    <string name="nav_courses">Chapters</string>
+    <string name="nav_notes">Notes</string>
+    <string name="nav_bookmarks">Bookmarks</string>
+    <string name="nav_dictionary">Dictionary</string>
+    <string name="nav_tests">Previous Year Papers</string>
+    <string name="nav_practice_test">Practice Test</string>
+    <string name="nav_legal_maxim">Legal Maxims</string>
+    <string name="nav_landmark_judgement">Landmark Judgement</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_subscription">Subscription</string>
+    <string name="nav_app_share">Share App</string>
+
+    <string name="nav_about_us">About Us</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="features_list">Features List</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Home</item>
+        <item>Chapters</item>
+        <item>Notes</item>
+        <item>Bookmarks</item>
+        <item>Dictionary</item>
+        <item>Previous Year Papers</item>
+        <item>Practice Test</item>
+        <item>Legal Maxims</item>
+        <item>Landmark Judgement</item>
+        <item>Profile</item>
+        <item>Subscription</item>
+        <item>Share App</item>
+        <item>About Us</item>
+        <item>Privacy Policy</item>
+
+    </string-array>
+
+    <string name="activity_title_about_us">About Us</string>
+    <string name="activity_title_privacy_policy">Privacy Policy</string>
+
+    <!--<string name="title_activity_register">RegisterActivity</string>-->
+    <string name="password">Password</string>
+    <string name="email">johndoe@emailserver.com</string>
+    <string name="Rs">\u20B9</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="subscription_message">You are not a subscribed member. You can attempt only a limited questions. If you want to attempt all the questions, please SUBSCRIBE.</string>
+    <string name="applink">Hello App is coming soon on play store :-)</string>
+    <string name="free">Free</string>
+    <string name="paid">Paid</string>
+</resources>
